@@ -34,3 +34,8 @@ ul li {
     margin-bottom: 15px;
     font-size: 18px;
 }
+
+.service-col {
+    background-color: red;
+    height: 300px;
+}
