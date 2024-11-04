@@ -16,6 +16,15 @@ section {
     padding: 50px 0;
 }
 
+.card-body {
+  min-height: 175px;
+  background-color: black;
+}
+
+.card-body .card-title {
+  color: grey;
+}
+
 #customers img {
     margin: 10px;
 }
@@ -38,4 +47,86 @@ ul li {
 .service-col {
     background-color: red;
     height: 300px;
+}
+
+.main-bg-colour {
+    background-color: #21B8DB;
+}
+
+.secondary-bg-colour {
+    background-color: #5ACDE0;
+}
+
+.black-colour {
+    background-color: #000000;
+}
+
+.highlight-colour-main {
+    background-color: #E17628;
+}
+
+.highlight-colour-secondary {
+    background-color: #E54F50;
+}
+
+.ticker-wrap {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    bottom: 0;
+    height: 3.5rem; 
+  }
+  .ticker {
+    display: inline-block;
+    margin-top: 5px;
+    animation: marquee 130s linear infinite;
+  }
+  .item-collection-1 {
+    position: relative;
+    left: 0%;
+    animation: swap 130s linear infinite;
+  }
+  
+  .item {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: black;   
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+  
+  /* Transition */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0)
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+  
+  @keyframes swap {
+    0%, 50% {
+      left: 0%;
+    }
+    50.01%,
+    100% {
+      left: 100%;
+    }
+
+    .map-container {
+    position: relative;
+    overflow: hidden; /* Hide any overflowing content */
+    width: 600px; /* Set your desired width */
+    height: 450px; /* Set your desired height */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove border */
+    pointer-events: auto; /* Allow pointer events */
 }
